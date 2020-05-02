@@ -1,0 +1,17 @@
+# Codebraid
+
+Here is `pweave --help`:
+
+```{.python .cb.run show=stdout}
+import subprocess
+text = subprocess.check_output("pweave --help", shell=True)
+print(text.decode("utf-8"))
+```
+
+Here is `codebraid --help`:
+
+```{.python .cb.run show=stdout}
+import subprocess
+text = subprocess.check_output("codebraid --help", shell=True)
+print(text.decode("utf-8"))
+```

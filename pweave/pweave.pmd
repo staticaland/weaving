@@ -1,0 +1,21 @@
+# Pweave
+
+Here is `pweave --help`:
+
+```python, echo=False, results="verbatim"
+import subprocess
+text = subprocess.check_output("pweave --help", shell=True)
+print(text.decode("utf-8"))
+```
+
+Here is `codebraid --help`:
+
+```python, echo=False, results="verbatim"
+import subprocess
+text = subprocess.check_output("codebraid --help", shell=True)
+print(text.decode("utf-8"))
+```
+
+Weave this code with:
+
+    pweave --format markdown pweave.pmd

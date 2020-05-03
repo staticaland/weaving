@@ -19,3 +19,11 @@ print(text.decode("utf-8"))
 Weave this code with:
 
     pweave --format markdown pweave.pmd
+
+I am listening to music with `catt` ([catt](https://github.com/skorokithakis/catt)):
+
+```python, echo=False, results="verbatim"
+import subprocess
+text = subprocess.check_output("catt status", shell=True)
+print(text.decode("utf-8"))
+```

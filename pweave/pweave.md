@@ -2,6 +2,7 @@
 
 Here is `pweave --help`:
 
+
 ```
 Usage: pweave [options] sourcefile
 
@@ -51,7 +52,10 @@ to set
                         cell type in Jupyter notebooks
 ```
 
+
+
 Here is `codebraid --help`:
+
 
 ```
 usage: codebraid [-h] [--version] {pandoc} ...
@@ -67,6 +71,21 @@ optional arguments:
   --version   show program's version number and exit
 ```
 
+
+
 Weave this code with:
 
     pweave --format markdown pweave.pmd
+
+I am listening to music with `catt` ([catt](https://github.com/skorokithakis/catt)):
+
+
+```
+Title: Mutual Mixes #11: Bendik HK - For People Staying Inside
+Time: 00:05:32 / 00:43:21 (12%)
+Remaining time: 00:37:49
+State: PLAYING
+Volume: 100
+```
+
+

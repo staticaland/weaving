@@ -1,5 +1,7 @@
 # Codebraid
 
+The source of this document is [codebraid.cbmd](./codebraid.cbmd).
+
 You should read about [Pandoc's
 Markdown](https://pandoc.org/MANUAL.html#pandocs-markdown) before
 using Codebraid.
@@ -22,8 +24,10 @@ Here is `codebraid --help`:
 codebraid --help
 ```
 
-I am listening to music with `catt` ([catt](https://github.com/skorokithakis/catt)):
+I am listening to music with `catt` ([➸ catt](https://github.com/skorokithakis/catt)):
 
 ```{.bash .cb.run show=stdout:verbatim}
 catt status
 ```
+
+What do you get when sending panda to httpbin.org? You get `curl -s "https://httpbin.org/anything?value=panda" | jq -j .args.value`{.bash .cb.run}.

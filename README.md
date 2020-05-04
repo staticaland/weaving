@@ -15,6 +15,10 @@ https://en.wikipedia.org/wiki/Literate_programming
 
 > Literate programming is a methodology that combines a programming language with a documentation language, thereby making programs more robust, more portable, more easily maintained, and arguably more fun to write than programs that are written only in a high-level language. The main idea is to treat a program as a piece of literature, addressed to human beings rather than to a computer. The program is also viewed as a hypertext document, rather like the World Wide Web.
 
+https://gpoore.github.io/#programming
+
+> One of my objectives is making it easier to write scientific and technical documents. I like to include executable code in my documents, so that things like plots and tables can be generated automatically. Documents can write themselves – at least in part. You may be familiar with this approach from software like Jupyter notebooks, Sweave, knitr, or Org-mode Babel.
+
 Tools:
 
 - https://github.com/nedbat/cog

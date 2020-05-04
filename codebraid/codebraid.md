@@ -1,13 +1,16 @@
 # Codebraid
 
+The source of this document is [codebraid.cbmd](./codebraid.cbmd).
+
 You should read about [Pandoc’s
 Markdown](https://pandoc.org/MANUAL.html#pandocs-markdown) before using
 Codebraid.
 
 Pay close attention to these extensions:
 
-  - `fenced_code_attributes`
+  - `fenced_code_blocks`
   - `backtick_code_blocks`
+  - `fenced_code_attributes`
 
 Here is `pweave --help`:
 
@@ -66,13 +69,15 @@ optional arguments:
   --version   show program's version number and exit
 ```
 
-I am listening to music with `catt`
-([catt](https://github.com/skorokithakis/catt)):
+I am listening to music with `catt` ([➸
+catt](https://github.com/skorokithakis/catt)):
 
 ``` stdout
-Title: Mutual Mixes #11: Bendik HK - For People Staying Inside
-Time: 00:02:04 / 00:43:21 (4%)
-Remaining time: 00:41:17
+Title: Hainbach live at Blå Oslo 2020
+Time: 00:03:11 / 00:51:30 (6%)
+Remaining time: 00:48:18
 State: PLAYING
-Volume: 100
+Volume: 20
 ```
+
+What do you get when sending panda to httpbin.org? You get panda.

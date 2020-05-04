@@ -1,5 +1,14 @@
 # Codebraid
 
+You should read about [Pandoc’s
+Markdown](https://pandoc.org/MANUAL.html#pandocs-markdown) before using
+Codebraid.
+
+Pay close attention to these extensions:
+
+  - `fenced_code_attributes`
+  - `backtick_code_blocks`
+
 Here is `pweave --help`:
 
 ``` stdout
@@ -55,4 +64,15 @@ positional arguments:
 optional arguments:
   -h, --help  show this help message and exit
   --version   show program's version number and exit
+```
+
+I am listening to music with `catt`
+([catt](https://github.com/skorokithakis/catt)):
+
+``` stdout
+Title: Mutual Mixes #11: Bendik HK - For People Staying Inside
+Time: 00:02:04 / 00:43:21 (4%)
+Remaining time: 00:41:17
+State: PLAYING
+Volume: 100
 ```

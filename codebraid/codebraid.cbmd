@@ -1,17 +1,29 @@
 # Codebraid
 
+You should read about [Pandoc's
+Markdown](https://pandoc.org/MANUAL.html#pandocs-markdown) before
+using Codebraid.
+
+Pay close attention to these extensions:
+
+- `fenced_code_blocks`
+- `backtick_code_blocks`
+- `fenced_code_attributes`
+
 Here is `pweave --help`:
 
-```{.python .cb.run show=stdout}
-import subprocess
-text = subprocess.check_output("pweave --help", shell=True)
-print(text.decode("utf-8"))
+```{.bash .cb.run show=stdout:verbatim}
+pweave --help
 ```
 
 Here is `codebraid --help`:
 
-```{.python .cb.run show=stdout}
-import subprocess
-text = subprocess.check_output("codebraid --help", shell=True)
-print(text.decode("utf-8"))
+```{.bash .cb.run show=stdout:verbatim}
+codebraid --help
+```
+
+I am listening to music with `catt` ([catt](https://github.com/skorokithakis/catt)):
+
+```{.bash .cb.run show=stdout:verbatim}
+catt status
 ```

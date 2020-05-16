@@ -112,6 +112,6 @@ What happened to Terraform? Is CWD changed?
 ## Mermaid
 
 Since I now use Codebraid I get to use Pandoc filters too\! Like
-`mermaid-filter`.
+[`mermaid-filter`](https://github.com/raghur/mermaid-filter).
 
 ![](img/diagram-1.svg)

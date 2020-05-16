@@ -1,15 +1,12 @@
 CODEBRAID_DOCS := $(shell find . -name '*.cbmd')
 MARKDOWN_DOCS = $(CODEBRAID_DOCS:.cbmd=.md)
 
-.PHONY: all readme pweave
-
-pweave:
-	pweave/pweave_repo.sh
+.PHONY: cbmd watch
 
 %.md : %.cbmd
-	codebraid pandoc --from markdown --to gfm --output $@ --overwrite $^
+	codebraid pandoc --from markdown --to gfm --filter=mermaid-filter --output $@ --overwrite $^
 
+cbmd : $(MARKDOWN_DOCS)
 
-all : $(MARKDOWN_DOCS)
-
-readme : README.md
+watch :
+	find . -name '*.cbmd' | entr make cbmd

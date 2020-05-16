@@ -8,13 +8,13 @@ Codebraid.
 
 Pay close attention to these extensions:
 
-  - `fenced_code_blocks`
-  - `backtick_code_blocks`
-  - `fenced_code_attributes`
+- `fenced_code_blocks`
+- `backtick_code_blocks`
+- `fenced_code_attributes`
 
 Here is `pweave --help`:
 
-``` stdout
+```stdout
 Usage: pweave [options] sourcefile
 
 Options:
@@ -56,7 +56,7 @@ Options:
 
 Here is `codebraid --help`:
 
-``` stdout
+```stdout
 usage: codebraid [-h] [--version] {pandoc} ...
 
 positional arguments:
@@ -70,14 +70,48 @@ optional arguments:
 ```
 
 I am listening to music with `catt` ([➸
-catt](https://github.com/skorokithakis/catt)):
-
-``` stdout
-Title: Hainbach live at Blå Oslo 2020
-Time: 00:03:11 / 00:51:30 (6%)
-Remaining time: 00:48:18
-State: PLAYING
-Volume: 20
-```
+catt](https://github.com/skorokithakis/catt))…
 
 What do you get when sending panda to httpbin.org? You get panda.
+
+This is the result of a `curl`command querying a quote API:
+
+```stdout
+Genius is one percent inspiration and ninety-nine percent perspiration.
+```
+
+How about some Terraform documentation?
+
+# Module `../terraform-aws-s3-object`
+
+Provider Requirements:
+
+- **aws:** (any version)
+
+## Input Variables
+
+- `bucketname` (required)
+- `destFileName` (required)
+- `kmsEncrypt` (required)
+- `kmsKeyId` (required)
+- `sourceFile` (required)
+
+## Output Values
+
+- `s3_bucket`
+- `s3_dest_file`
+- `s3_source_file`
+
+## Managed Resources
+
+- `aws_s3_bucket_object.object_with_kms_encryption` from `aws`
+- `aws_s3_bucket_object.object_without_encryption` from `aws`
+
+What happened to Terraform? Is CWD changed?
+
+## Mermaid
+
+Since I now use Codebraid I get to use Pandoc filters too\! Like
+`mermaid-filter`.
+
+![](img/diagram-1.png)

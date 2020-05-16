@@ -24,10 +24,36 @@ Here is `codebraid --help`:
 codebraid --help
 ```
 
-I am listening to music with `catt` ([➸ catt](https://github.com/skorokithakis/catt)):
+I am listening to music with `catt` ([➸ catt](https://github.com/skorokithakis/catt))...
 
 ```{.bash .cb.run show=stdout:verbatim}
 catt status
 ```
 
 What do you get when sending panda to httpbin.org? You get `curl -s "https://httpbin.org/anything?value=panda" | jq -j .args.value`{.bash .cb.run}.
+
+This is the result of a `curl`command querying a quote API:
+
+```{.bash .cb.run show=stdout:verbatim}
+curl https://type.fit/api/quotes -s | jq -j '.[0].text'
+```
+
+How about some Terraform documentation?
+
+```{.bash .cb.run show=stdout:raw}
+terraform-config-inspect ../terraform-aws-s3-object | sed ""
+```
+
+What happened to Terraform? Is CWD changed?
+
+## Mermaid
+
+Since I now use Codebraid I get to use Pandoc filters too! Like `mermaid-filter`.
+
+```{.mermaid loc=codebraid/img}
+graph LR
+    A[Pandoc Markdown] --> B[Codebraid]
+    B --> C[Pandoc]
+    C --> D[Pandoc filters]
+    D --> E[Markdown]
+```

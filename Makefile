@@ -16,5 +16,15 @@ sgr0 := $(shell tput sgr0)
 
 cbmd : $(MARKDOWN_DOCS)
 
-watch :
-	find . -name '*.cbmd' | entr make cbmd
+entr_warn:
+	@echo "-------------------------------------------------"
+	@echo " ! File watching functionality non-operational ! "
+	@echo "                                                 "
+	@echo " Install entr(1) to run tasks on file change.    "
+	@echo " See http://entrproject.org/                     "
+	@echo "-------------------------------------------------"
+
+
+watch:
+	if command -v entr > /dev/null; then find . -name '*.cbmd' | \
+	entr make cbmd; else make cbmd entr_warn; fi

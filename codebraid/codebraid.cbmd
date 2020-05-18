@@ -59,7 +59,7 @@ graph LR
 
 ## Diagrams
 
-I try to create a diagram...
+Here I create a diagram with [diagrams](https://github.com/mingrammer/diagrams).
 
 ```{.python .cb.run executable=../venv/bin/python}
 from diagrams import Diagram
@@ -67,12 +67,12 @@ from diagrams.aws.compute import EC2
 from diagrams.aws.database import RDS
 from diagrams.aws.network import ELB
 
-with Diagram("Grouped Workers", show=False, direction="TB"):
+with Diagram("Grouped Workers", show=False, direction="TB", outformat="svg"):
     ELB("lb") >> [EC2("worker1"),
                   EC2("worker2"),
                   EC2("worker3"),
                   EC2("worker4"),
                   EC2("worker5")] >> RDS("events")
 
-print("![Grouped Workers](grouped_workers.png)")
+print("![Grouped Workers](grouped_workers.svg)")
 ```

@@ -6,6 +6,8 @@ You should read about [Pandoc’s
 Markdown](https://pandoc.org/MANUAL.html#pandocs-markdown) before using
 Codebraid.
 
+Pandoc Markdown has special syntax for code blocks.
+
 Pay close attention to these extensions:
 
   - `fenced_code_blocks`
@@ -109,6 +111,13 @@ Since I now use Codebraid I get to use Pandoc filters too\! Like
 [`mermaid-filter`](https://github.com/raghur/mermaid-filter).
 
 ![](img/diagram-1.svg)
+
+I could probably pipe Mermaid syntax through a Python subprocess to
+`mermaid-cli`. Speaking of wonderful things… Someone has made a web
+service that creates diagrams for all kinds of textual diagram languages
+- [kroki.io](https://kroki.io/). Diagrams\!
+
+  - https://gist.github.com/jerieljan/4c82515ff5f2b2e4dd5122d354a82b7e
 
 ## Diagrams
 

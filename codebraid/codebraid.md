@@ -74,7 +74,7 @@ catt](https://github.com/skorokithakis/catt))…
 
 What do you get when sending panda to httpbin.org? You get panda.
 
-This is the result of a `curl`command querying a quote API:
+This is the result of a `curl` command querying a quote API:
 
 ``` stdout
 Genius is one percent inspiration and ninety-nine percent perspiration.
@@ -103,11 +103,15 @@ Provider Requirements:
 * `aws_s3_bucket_object.object_with_kms_encryption` from `aws`
 * `aws_s3_bucket_object.object_without_encryption` from `aws`
 
-What happened to Terraform? Is CWD changed?
-
 ## Mermaid
 
 Since I now use Codebraid I get to use Pandoc filters too\! Like
 [`mermaid-filter`](https://github.com/raghur/mermaid-filter).
 
 ![](img/diagram-1.svg)
+
+## Diagrams
+
+I try to create a diagram…
+
+![Grouped Workers](grouped_workers.png)

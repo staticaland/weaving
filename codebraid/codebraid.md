@@ -115,4 +115,4 @@ Since I now use Codebraid I get to use Pandoc filters too\! Like
 Here I create a diagram with
 [diagrams](https://github.com/mingrammer/diagrams).
 
-![Grouped Workers](grouped_workers.svg)
+![Grouped Workers](grouped_workers.png)

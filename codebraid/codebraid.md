@@ -1,18 +1,46 @@
 # Codebraid
 
-The source of this document is [codebraid.cbmd](./codebraid.cbmd).
+The source of this document is [codebraid.cbmd](./codebraid.cbmd). I
+combine `entr` and `make` to run `codebraid`any time the source file is
+changed. The [`Makefile`](../Makefile) is inspired by an example in [The
+Tao of Tmux](https://leanpub.com/the-tao-of-tmux/read#file-watching).
 
 You should read about [Pandoc’s
 Markdown](https://pandoc.org/MANUAL.html#pandocs-markdown) before using
 Codebraid.
-
-Pandoc Markdown has special syntax for code blocks.
 
 Pay close attention to these extensions:
 
   - `fenced_code_blocks`
   - `backtick_code_blocks`
   - `fenced_code_attributes`
+
+## Mermaid
+
+Since I now use Codebraid I get to use Pandoc filters too\! Like
+[`mermaid-filter`](https://github.com/raghur/mermaid-filter).
+
+![](img/diagram-1.svg)
+
+I could probably pipe Mermaid syntax through a Python subprocess to
+`mermaid-cli`. Speaking of wonderful things… Someone has made a web
+service that creates diagrams for all kinds of textual diagram languages
+- [kroki.io](https://kroki.io/). Diagrams\!
+
+<!-- - https://gist.github.com/jerieljan/4c82515ff5f2b2e4dd5122d354a82b7e -->
+
+<!-- - https://monodraw.helftone.com/ -->
+
+<!-- - https://app.diagrams.net/ aka Drawio has AWS 3D -->
+
+## Diagrams
+
+Here I create a diagram with
+[diagrams](https://github.com/mingrammer/diagrams).
+
+![Grouped Workers](grouped_workers.png)
+
+# Help texts
 
 Here is `pweave --help`:
 
@@ -104,24 +132,3 @@ Provider Requirements:
 ## Managed Resources
 * `aws_s3_bucket_object.object_with_kms_encryption` from `aws`
 * `aws_s3_bucket_object.object_without_encryption` from `aws`
-
-## Mermaid
-
-Since I now use Codebraid I get to use Pandoc filters too\! Like
-[`mermaid-filter`](https://github.com/raghur/mermaid-filter).
-
-![](img/diagram-1.svg)
-
-I could probably pipe Mermaid syntax through a Python subprocess to
-`mermaid-cli`. Speaking of wonderful things… Someone has made a web
-service that creates diagrams for all kinds of textual diagram languages
-- [kroki.io](https://kroki.io/). Diagrams\!
-
-  - https://gist.github.com/jerieljan/4c82515ff5f2b2e4dd5122d354a82b7e
-
-## Diagrams
-
-Here I create a diagram with
-[diagrams](https://github.com/mingrammer/diagrams).
-
-![Grouped Workers](grouped_workers.png)

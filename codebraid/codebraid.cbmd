@@ -48,7 +48,7 @@ from diagrams.aws.compute import EC2
 from diagrams.aws.database import RDS
 from diagrams.aws.network import ELB
 
-with Diagram("Grouped Workers", show=False, direction="TB", outformat="png"):
+with Diagram("Grouped Workers", show=False, direction="TB", outformat="png", graph_attr={"pad": "0.1,0.1"}):
     ELB("lb") >> [EC2("worker1"),
                   EC2("worker2"),
                   EC2("worker3"),

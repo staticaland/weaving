@@ -11,6 +11,9 @@ Some other tools and concepts are considered and are listed below.
 
 You will find examples of usage in the pweave and codebraid folders.
 
+[Is anyone else using Codebraid for README-md (search for
+filename:readme.cbmd)?](https://github.com/search?q=filename%3Areadme.cbmd&type=code)
+
 https://en.wikipedia.org/wiki/Literate_programming
 
 > Literate programming is a methodology that combines a programming language with a documentation language, thereby making programs more robust, more portable, more easily maintained, and arguably more fun to write than programs that are written only in a high-level language. The main idea is to treat a program as a piece of literature, addressed to human beings rather than to a computer. The program is also viewed as a hypertext document, rather like the World Wide Web.

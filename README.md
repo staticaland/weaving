@@ -12,7 +12,7 @@ Some other tools and concepts are considered and are listed below.
 You will find examples of usage in the `pweave` and `codebraid` folders.
 
 [Is anyone else using Codebraid for README-md (search for
-filename:readme.cbmd)?](https://github.com/search?q=filename%3Areadme.cbmd&type=code)
+filename:readme.cbmd)?](https://github.com/search?q=filename%3Areadme.cbmd&type=code). [How about Pandoc markdown](https://github.com/search?l=&q=filename%3AREADME.pandoc.md&type=code)?
 
 https://en.wikipedia.org/wiki/Literate_programming
 

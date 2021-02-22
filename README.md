@@ -9,7 +9,7 @@ code weaving in Markdown documents.
 
 Some other tools and concepts are considered and are listed below.
 
-You will find examples of usage in the pweave and codebraid folders.
+You will find examples of usage in the `pweave` and `codebraid` folders.
 
 [Is anyone else using Codebraid for README-md (search for
 filename:readme.cbmd)?](https://github.com/search?q=filename%3Areadme.cbmd&type=code)
